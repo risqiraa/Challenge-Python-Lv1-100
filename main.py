@@ -1,18 +1,11 @@
 
-def level12():
-    hasil = []
+def level13():
     kata = input("masukkan kata anda: ")
-    kata = kata.lower().split()
-
-    for i in kata:
-        balik_kata = i[::-1]
-        hasil.append(balik_kata)
-
-    join_kata = ' '.join(hasil[::-1])
-    print(join_kata)
+    kata_unik = len(set(kata.lower().split()))
+    print("Jumlah Kata Unik: "+str(kata_unik))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    level12()
+    level13()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
