@@ -1,19 +1,18 @@
 
-def level11():
-    hitung_vokal = 0
-    hitung_konsonan = 0
+def level12():
+    hasil = []
     kata = input("masukkan kata anda: ")
-    kata = list(kata.lower())
-    print (kata)
-    for huruf in kata:
-        if huruf.lower() in ["a","i","u","e","o"]:
-            hitung_vokal +=1
-        else:
-            hitung_konsonan +=1
+    kata = kata.lower().split()
 
-    print("Vokal: "+str(hitung_vokal)+"\nKonsonan: "+str(hitung_konsonan))
+    for i in kata:
+        balik_kata = i[::-1]
+        hasil.append(balik_kata)
+
+    join_kata = ' '.join(hasil[::-1])
+    print(join_kata)
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    level11()
+    level12()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
