@@ -1,26 +1,27 @@
-def level5():
+def level6():
 
+    angka1 = input("masukkan angka ke-1: ")
+    angka2 = input("masukkan angka ke-2: ")
+    angka1 = int(angka1)
+    angka2 = int(angka2)
     numbers = []
-    while True:
-        angka = input("input angka anda, ketik end jika ingin mengakhiri: ")
+    for number in range(angka1, angka2 + 1):
+        if number > 1:
+            is_prime = True
+            for i in range(2, number):
+                if number % i == 0:
+                    is_prime = False
+                    break
+            if is_prime:
+                numbers.append(number)
 
-        if angka.lower() == "end":
-            break
-
-        numbers.append(int(angka))
-
-    print(numbers[::-1])
-
-
-
-
-
+    print("Bilangan Prima Antara " + str(angka1) + " dan " + str(angka2) + " adalah: " + str(numbers))
 
 
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    level5()
+    level6()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
