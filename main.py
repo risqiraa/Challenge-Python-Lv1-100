@@ -1,12 +1,24 @@
-def level2():
-    angka1 = input("Silahkan input angka ke-1: ")
-    angka1 = int(angka1)
-    angka2 = input("Silahkan input angka ke-2: ")
-    angka2 = int(angka2)
-    jumlah = angka1+angka2
-    print("Hasil penjumlahan dari "+str(angka1)+" dan "+str(angka2)+" adalah "+str(jumlah))
+def level3():
+    panjang = input("Silahkan input panjang persegi panjang: ")
+    panjang = int(panjang)
+    lebar = input("Silahkan input lebar persegi panjang: ")
+    lebar = int(lebar)
+    keliling = 2*(panjang+lebar)
+    luas = panjang*lebar
+    print("Keliling Persegi Panjang: "+str(keliling))
+    print("Luas Persegi Panjang: "+str(luas))
+
+
+
+
+
+
+
+
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    level2()
+    level3()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
