@@ -1,14 +1,10 @@
 
-def level16():
-    angka1 = int(input("Masukkan angka 1: "))
-    angka2 = int(input("Masukkan angka 2: "))
-    hasil_kali = angka1*angka2
-    if hasil_kali > 1000:
-        print("Hasil: "+str(hasil_kali)+", Hasil Teralu Besar")
-    else:
-        print("Hasil: "+str(hasil_kali)+", Hasil Dalam Range")
+def level17():
+    angka1 = 18
+    angka1 = bin(angka1)
+    print(angka1)
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    level16()
+    level17()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
